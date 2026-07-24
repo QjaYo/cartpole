@@ -1,0 +1,21 @@
+State = {
+    cart position,
+    cart velocity
+    pole angle
+    pole angular velocity
+}
+
+Observation = State
+
+Action = {
+    0,  # left
+    1   # right
+}
+
+Policy
+
+Trajectory = {
+    ()
+}
+
+python SimpleHumanoid/play.py --target-x 1.0 --episodes 1 --delay 0.05
