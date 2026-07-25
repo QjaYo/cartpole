@@ -1,7 +1,5 @@
 # CartPole
 
-<br>
-
 ## Value-based Agent
 
 | 2,500 Episodes | 5,000 Episodes | 7,500 Episodes | 10,000 Episodes |
