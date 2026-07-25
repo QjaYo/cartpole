@@ -9,7 +9,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 
-MODEL_PATH = Path(__file__).with_name("cartpole_dqn_10000.pt")
+MODEL_DIR = Path(__file__).resolve().parent / "models"
+MODEL_PATH = MODEL_DIR / "cartpole_dqn_10000.pt"
 
 # hyperparameters
 learning_rate   = 0.0005
@@ -17,6 +18,7 @@ gamma           = 0.98
 buffer_limit    = 50000
 batch_size      = 32
 episode_limit   = 10000
+checkpoint_interval = 2500
 
 # classes
 class ReplayBuffer():
@@ -122,7 +124,12 @@ def main():
             print("n_episode: {}, score: {:.1f}, n_buffer: {}, epsilon: {:.4f}".format(n_epi, score/target_update_interval, buffer.size(), epsilon))
             score = 0.0
 
-    torch.save(q.state_dict(), MODEL_PATH)
+        if (n_epi + 1) % checkpoint_interval == 0:
+            MODEL_DIR.mkdir(parents=True, exist_ok=True)
+            model_path = MODEL_DIR / f"cartpole_dqn_{n_epi + 1}.pt"
+            torch.save(q.state_dict(), model_path)
+            print(f"saved model: {model_path}")
+
     env.close()
 
 if __name__ == '__main__':

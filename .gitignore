@@ -1,2 +1,3 @@
-value_based_agent/screenshots/*.mov
-policy_based_agent/screenshots/*.mov
+__pycache__/
+*.py[cod]
+*.mov

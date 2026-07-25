@@ -6,4 +6,10 @@
 
 | 2,500 Episodes | 5,000 Episodes | 7,500 Episodes | 10,000 Episodes |
 |:---:|:---:|:---:|:---:|
-| <img width="240" height="171" alt="CartPole after 2,500 episodes" src="value_based_agent/screenshots/2500epi.gif" /> | <img width="240" height="171" alt="CartPole after 5,000 episodes" src="value_based_agent/screenshots/5000epi.gif" /> | <img width="240" height="171" alt="CartPole after 7,500 episodes" src="value_based_agent/screenshots/7500epi.gif" /> | <img width="240" height="171" alt="CartPole after 10,000 episodes" src="value_based_agent/screenshots/10000epi.gif" /> |
+| <img width="240" height="171" alt="Value-based CartPole after 2,500 episodes" src="value-based/screenshots/2500epi.gif" /> | <img width="240" height="171" alt="Value-based CartPole after 5,000 episodes" src="value-based/screenshots/5000epi.gif" /> | <img width="240" height="171" alt="Value-based CartPole after 7,500 episodes" src="value-based/screenshots/7500epi.gif" /> | <img width="240" height="171" alt="Value-based CartPole after 10,000 episodes" src="value-based/screenshots/10000epi.gif" /> |
+
+## Policy-based Agent
+
+| 2,500 Episodes | 5,000 Episodes | 7,500 Episodes | 10,000 Episodes |
+|:---:|:---:|:---:|:---:|
+| <img width="240" height="171" alt="Policy-based CartPole after 2,500 episodes" src="policy-based/screenshots/2500epi.gif" /> | <img width="240" height="171" alt="Policy-based CartPole after 5,000 episodes" src="policy-based/screenshots/5000epi.gif" /> | <img width="240" height="171" alt="Policy-based CartPole after 7,500 episodes" src="policy-based/screenshots/7500epi.gif" /> | <img width="240" height="171" alt="Policy-based CartPole after 10,000 episodes" src="policy-based/screenshots/10000epi.gif" /> |
